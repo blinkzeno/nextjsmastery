@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @next/next/no-img-element */
 import { EyeIcon } from 'lucide-react';
 import Image from 'next/image';
@@ -5,7 +6,7 @@ import Link from 'next/link';
 import React from 'react'
 import { Button } from './ui/button';
 
-const StartupCard = ({ post }: { post: StartupTypeCard }) => {
+const StartupCard = ({ post }: { post: any }) => {
   const { _createdAt, views, title, description, category, author:{ _id: authorId, name}, _id, image } =
     post;
   return (

@@ -37,7 +37,7 @@ const page = async ({ searchParams,}: { searchParams: Promise<{ query?: string }
 
         <ul className="card_grid mt-3 ">
           {posts?.length > 0 ?(
-            posts.map((post: StartupTypeCard) => (
+            posts.map((post) => (
               <StartupCard key={post._id} post={post} />
             ))
           )
